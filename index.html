@@ -28,19 +28,21 @@
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
+      align-items: center;
     }
-    .list-link {
+    .list-link a {
+      display: inline-block;
       background: #fff;
       border-radius: 12px;
-      padding: 1.5rem;
+      padding: 1.5rem 2rem;
       text-align: center;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
       font-size: 1.2rem;
-    }
-    .list-link a {
-      text-decoration: none;
       color: #cc3366;
       font-weight: bold;
+      text-decoration: none;
+      min-width: 280px;
+      max-width: 100%;
     }
     footer {
       text-align: center;
@@ -55,11 +57,11 @@
     <h1>Hope Clore Business</h1>
     <p>Curated Amazon Finds Just for You</p>
   </header>
+
   <main>
     <div class="list-link">
       <a href="everything-cherries.html">🍒 Everything Cherries – Water Bottles</a>
     </div>
-     <main>
     <div class="list-link">
       <a href="summer-nails.html">☀️ Summer Nails – Under $10</a>
     </div>
@@ -67,8 +69,10 @@
       <a href="#">More Lists Coming Soon</a>
     </div>
   </main>
+
   <footer>
     <p>As an Amazon Associate, I earn from qualifying purchases.</p>
   </footer>
 </body>
 </html>
+
