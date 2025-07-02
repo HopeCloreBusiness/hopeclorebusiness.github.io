@@ -32,6 +32,28 @@
       margin-top: 0.5rem;
     }
 
+    /* Navigation styles added */
+    nav {
+      background: #ffe6ea;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      gap: 2rem;
+      border-bottom: 2px solid #ffdbe3;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #cc3366;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #a8244e;
+    }
+
     main {
       max-width: 1000px;
       margin: 2rem auto;
@@ -66,6 +88,12 @@
       max-width: 260px;
       border-radius: 12px;
       margin-bottom: 1rem;
+      /* Try to improve sharpness */
+      image-rendering: crisp-edges;
+      image-rendering: pixelated;
+      image-rendering: -webkit-optimize-contrast;
+      /* prevent shrinking smaller than natural size */
+      height: auto;
     }
 
     .product a {
@@ -115,34 +143,41 @@
     <p>Summer Nails – Under $10</p>
   </header>
 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="summer-nails.html">☀️ Summer Nails</a>
+    <a href="grandmacore.html">🌸 Grandmacore</a>
+    <a href="#">More Lists Coming Soon</a>
+  </nav>
+
   <main>
     <div class="product">
       <h2>Floral Square Nails</h2>
-      <img src="summernails1.jpg" alt="Floral Square Nails">
+      <img src="summernails1.jpg" alt="Floral Square Nails" />
       <a href="https://amzn.to/46hSSYv" target="_blank">Shop on Amazon</a>
     </div>
 
     <div class="product">
       <h2>3D Beachy Almond Nails</h2>
-      <img src="summernails2.jpg" alt="3D Beachy Almond Nails">
+      <img src="summernails2.jpg" alt="3D Beachy Almond Nails" />
       <a href="https://amzn.to/4lc8odk" target="_blank">Shop on Amazon</a>
     </div>
 
     <div class="product">
       <h2>Retro Fruity Almond Nails</h2>
-      <img src="summernails3.jpg" alt="Retro Fruity Almond Nails">
+      <img src="summernails3.jpg" alt="Retro Fruity Almond Nails" />
       <a href="https://amzn.to/40tvWln" target="_blank">Shop on Amazon</a>
     </div>
 
     <div class="product">
       <h2>Yellow Floral French Tip Almond Nails</h2>
-      <img src="summernails4.jpg" alt="Yellow Floral French Tip Almond Nails">
+      <img src="summernails4.jpg" alt="Yellow Floral French Tip Almond Nails" />
       <a href="https://amzn.to/3I7cch3" target="_blank">Shop on Amazon</a>
     </div>
 
     <div class="product">
       <h2>Elegant 3D Bow Almond Nails</h2>
-      <img src="summernails5.jpg" alt="Elegant 3D Bow Almond Nails">
+      <img src="summernails5.jpg" alt="Elegant 3D Bow Almond Nails" />
       <a href="https://amzn.to/4evOhnK" target="_blank">Shop on Amazon</a>
     </div>
   </main>
