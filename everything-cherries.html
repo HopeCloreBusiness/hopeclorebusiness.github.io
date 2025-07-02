@@ -10,106 +10,151 @@
       font-family: 'Raleway', sans-serif;
       margin: 0;
       padding: 0;
-      background: #fffafc;
+      background: linear-gradient(to bottom right, #fff0f5, #ffe6ea);
       color: #333;
     }
+
     header {
       background-color: #ffccd5;
       color: #fff;
-      padding: 2rem;
+      padding: 3rem 1rem;
       text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      margin: 0 0 0.5rem;
     }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
     nav {
       background: #ffe6ea;
-      text-align: center;
-      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      gap: 2rem;
+      border-bottom: 2px solid #ffdbe3;
     }
+
     nav a {
-      margin: 0 1rem;
       text-decoration: none;
       color: #cc3366;
       font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.2s ease;
     }
+
+    nav a:hover {
+      color: #a8244e;
+    }
+
     main {
-      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
     }
+
     .product {
       background: #fff;
-      border-radius: 12px;
-      padding: 1rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      margin-bottom: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
+    .product:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    }
+
     .product h2 {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #cc3366;
+      margin-bottom: 1rem;
     }
+
+    .product img {
+      width: 100%;
+      max-width: 220px;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+
     .product a {
       display: inline-block;
-      margin-top: 0.5rem;
-      text-decoration: none;
-      color: #fff;
       background: #cc3366;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-    }
-    .product img {
-      display: block;
-      margin-top: 0.5rem;
-      width: 150px;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
       border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.2s ease;
     }
+
+    .product a:hover {
+      background: #a8244e;
+    }
+
     footer {
       text-align: center;
-      font-size: 0.8rem;
-      color: #777;
-      padding: 2rem;
+      font-size: 0.85rem;
+      color: #666;
+      padding: 3rem 1rem;
+      background-color: #fffafc;
+      border-top: 1px solid #f0d2db;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Hope Clore Business</h1>
-    <p>Everything Cherries – Water Bottles</p>
+    <p>Everything Cherries – Curated Amazon Finds</p>
   </header>
+
   <nav>
     <a href="index.html">Home</a>
-    <a href="#">Next List Coming Soon</a>
+    <a href="summer-nails.html">☀️ Summer Nails</a>
+    <a href="grandmacore.html">🌸 Grandmacore</a>
+    <a href="#">More Lists Coming Soon</a>
   </nav>
 
   <main>
-  <div class="product">
-    <h2>32oz, Leak Proof, Straw, Wide Bottom, Carry Handle</h2>
-    <img src="waterbottle1.jpeg" alt="White cherry bottle" />
-    <a href="https://amzn.to/3GkrDSG" target="_blank">Shop on Amazon</a>
-  </div>
+    <div class="product">
+      <h2>32oz, Leak Proof, Straw, Wide Bottom, Carry Handle</h2>
+      <img src="waterbottle1.jpeg" alt="White cherry bottle" />
+      <a href="https://amzn.to/3GkrDSG" target="_blank">Shop on Amazon</a>
+    </div>
 
-  <div class="product">
-    <h2>32oz, Leak Proof, Straw, Cupholder Fit, Carry Handle</h2>
-    <img src="waterbottle2.jpeg" alt="Second cherry water bottle" />
-    <a href="https://amzn.to/4l35ffz" target="_blank">Shop on Amazon</a>
-  </div>
+    <div class="product">
+      <h2>32oz, Leak Proof, Straw, Cupholder Fit, Carry Handle</h2>
+      <img src="waterbottle2.jpeg" alt="Second cherry water bottle" />
+      <a href="https://amzn.to/4l35ffz" target="_blank">Shop on Amazon</a>
+    </div>
 
-  <div class="product">
-    <h2>32oz, Straw & Chug Lid, Carry Handle, Cupholder Fit</h2>
-    <img src="waterbottle3.jpeg" alt="Cherry print chug lid bottle" />
-    <a href="https://amzn.to/4lB3tCt" target="_blank">Shop on Amazon</a>
-  </div>
+    <div class="product">
+      <h2>32oz, Straw & Chug Lid, Carry Handle, Cupholder Fit</h2>
+      <img src="waterbottle3.jpeg" alt="Cherry print chug lid bottle" />
+      <a href="https://amzn.to/4lB3tCt" target="_blank">Shop on Amazon</a>
+    </div>
 
-  <div class="product">
-    <h2>24oz Tumbler, Leak Proof, Hot/Cold, Straw, Key Chain, Cupholder Fit</h2>
-    <img src="waterbottle4.jpeg" alt="Cherry pink tumbler with straw" />
-    <a href="https://amzn.to/4l3lauh" target="_blank">Shop on Amazon</a>
-  </div>
-</main>
+    <div class="product">
+      <h2>24oz Tumbler, Leak Proof, Hot/Cold, Straw, Key Chain, Cupholder Fit</h2>
+      <img src="waterbottle4.jpeg" alt="Cherry pink tumbler with straw" />
+      <a href="https://amzn.to/4l3lauh" target="_blank">Shop on Amazon</a>
+    </div>
+  </main>
 
   <footer>
-    <p>As an Amazon Associate, I earn from qualifying purchases.</p>
+    <p>As an Amazon Associate, I earn from qualifying purchases. Thanks for supporting Hope Clore Business!</p>
   </footer>
 </body>
 </html>
-
